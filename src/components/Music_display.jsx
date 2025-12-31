@@ -8,7 +8,7 @@ import Aesthetic_display from './Aesthetic_display'
 const Music_display = () => {
 
   return (
-    <div className='w-full rounded bg-[#121212] text-white overflow-y-auto h-screen'>
+    <div className='w-full rounded bg-[#121212] text-white overflow-y-auto h-full'>
         <Routes>
             <Route path='/' element={<Display_home/>}/>
              <Route path='/album/:id' element={<Album_display/>}/>

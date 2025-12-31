@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 // import Sidebar_temp from '../components/Sidebar_temp'
 import Music_display from '../components/Music_display'
 // import Music_player from '../components/Music_player'
+import Footer from "../components/Footer";
 
 const Applayout = () => {
   return (
@@ -28,6 +29,7 @@ const Applayout = () => {
           {/* <div className="absolute bottom-0 left-0 right-0">
             <Music_player />
           </div> */}
+          <Footer />
         </div>
 
       </div>
