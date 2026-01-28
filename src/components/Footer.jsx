@@ -1,5 +1,6 @@
 import React from "react";
-import { assets } from "../assets/assets";
+import { assets } from "../assets/assets"
+import { Link } from "react-router-dom"
 
 const Footer = () => {
   return (
@@ -25,23 +26,43 @@ const Footer = () => {
         <div>
           <h4 className="text-white font-semibold mb-4">Company</h4>
           <ul className="space-y-2 text-sm">
-            <li className="hover:text-white cursor-pointer">About</li>
+           <li> <Link to='/about' className="hover:text-white cursor-pointer">About</Link></li>
             <li className="hover:text-white cursor-pointer">Jobs</li>
             <li className="hover:text-white cursor-pointer">For the Record</li>
           </ul>
         </div>
 
-        {/* COMMUNITIES */}
+        
         <div>
-          <h4 className="text-white font-semibold mb-4">Communities</h4>
-          <ul className="space-y-2 text-sm">
-            <li className="hover:text-white cursor-pointer">For Artists</li>
-            <li className="hover:text-white cursor-pointer">Developers</li>
-            <li className="hover:text-white cursor-pointer">Advertising</li>
-            <li className="hover:text-white cursor-pointer">Investors</li>
-            <li className="hover:text-white cursor-pointer">Vendors</li>
-          </ul>
-        </div>
+  <h4 className="text-white font-semibold mb-4">Communities</h4>
+
+  <ul className="space-y-2 text-sm text-gray-400">
+    <li>
+      <Link to="/artist" className="hover:text-white transition">
+        For Artists
+      </Link>
+    </li>
+
+    <li>
+      <Link to="/developer" className="hover:text-white transition">
+        Developer
+      </Link>
+    </li>
+
+    <li>
+      <Link to="/advertise" className="hover:text-white transition">
+        Advertising
+      </Link>
+    </li>
+
+
+    <li>
+      <Link to="/vendor" className="hover:text-white transition">
+        Vendors
+      </Link>
+    </li>
+  </ul>
+</div>
 
         
         <div>
@@ -62,24 +83,11 @@ const Footer = () => {
 
         
         <p className="text-xs">
-          © {new Date().getFullYear()} MusicApp. All rights reserved.
+          © {new Date().getFullYear()} SH.Music. All rights reserved.
         </p>
 
 
-        <div className="flex gap-4">
-          <div className="w-9 h-9 flex items-center justify-center rounded-full bg-[#1f1f1f] hover:bg-purple-600 transition cursor-pointer">
-            🌐
-          </div>
-          <div className="w-9 h-9 flex items-center justify-center rounded-full bg-[#1f1f1f] hover:bg-purple-600 transition cursor-pointer">
-            📘
-          </div>
-          <div className="w-9 h-9 flex items-center justify-center rounded-full bg-[#1f1f1f] hover:bg-purple-600 transition cursor-pointer">
-            🐦
-          </div>
-          <div className="w-9 h-9 flex items-center justify-center rounded-full bg-[#1f1f1f] hover:bg-purple-600 transition cursor-pointer">
-            📸
-          </div>
-        </div>
+        
       </div>
     </footer>
   );
