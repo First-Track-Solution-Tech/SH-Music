@@ -24,6 +24,7 @@ import music_logo from './music_logo.png'
 import clock_icon from './clock_icon.png'
 import browser_icon from './browser_icon.png'
 import download_button from './download_button.png'
+import artist_hero from './artist_hero.jpg'
 import img1 from './img1.jpg'
 import img2 from './img2.jpg'
 import img3 from './img3.jpg'
@@ -49,9 +50,30 @@ import aesthetic3 from './aesthetic3.jpg'
 import aesthetic4 from './aesthetic4.jpg'
 import aesthetic5 from './aesthetic5.jpg'
 import aesthetic6 from './aesthetic6.jpg'
-
+import artist1 from './Aria.jpg'
+import artist2 from './Bradford.jpg'
+import artist3 from './Chen.jpg'
+import artist4 from './Echo.jpg'
+import artist5 from './Luna.jpg'
+import artist6 from './Noah.jpg'
+import amplify_music from './amplify_music.jpg'
+import connect_fan from './connect_fan.jpg'
+import featureAnalytics from './featureAnalytics.jpg'
+import advertise_hero from './advertise_hero.jpg'
+import info_1 from './info_1.jpg'
+import info_2 from './info_2.jpg'
+import info_3 from './info_3.jpg'
+import featureMonetize from './featureMonetize.jpg'
+import explore_hero from './explore_hero.png'
+import collaborate_3 from './collaborate_3.jpg'
+import collaborate_2 from './collaborate_2.jpg'
+import collaborate_1 from './collaborate_1.jpg'
 export const assets = {
-    bell_icon,
+    explore_hero,
+  collaborate_3,
+  collaborate_2,
+  collaborate_1,
+  bell_icon,
     home_icon,
     like_icon,
     loop_icon,
@@ -76,7 +98,16 @@ export const assets = {
     music_logo,
     clock_icon,
     browser_icon,
-    download_button
+    download_button, 
+    artist_hero,
+    amplify_music,
+    connect_fan,
+    featureAnalytics,
+    featureMonetize,
+    advertise_hero,
+    info_1,
+    info_2,
+    info_3
 }
 
 export const albumsData = [
@@ -123,6 +154,51 @@ export const albumsData = [
         bgColor:"#744210"
     }
 ]
+  export const artistsData = [
+  {
+    id: 1,
+    name: "Luna Ray",
+    genre: "Indie Pop",
+    image: artist1,
+    followers: "1.2M",
+  },
+  {
+    id: 2,
+    name: "Noah K",
+    genre: "Lo-Fi",
+    image: artist2,
+    followers: "860K",
+  },
+  {
+    id: 3,
+    name: "Aria Blue",
+    genre: "Soul",
+    image: artist3,
+    followers: "540K",
+  },
+  {
+    id: 4,
+    name: "Echo Vibe",
+    genre: "Electronic",
+    image: artist4,
+    followers: "2.3M",
+  },
+  {
+    id: 5,
+    name: "Lusi Chen",
+    genre: "Alt Pop",
+    image: artist5,
+    followers: "980K",
+  },
+  {
+    id: 5,
+    name: "Nova Bradford",
+    genre: "Alt Pop",
+    image: artist6,
+    followers: "980K",
+  }
+];
+
 
 export const songsData = [
     {

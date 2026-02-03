@@ -6,30 +6,49 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-black text-white px-4 sm:px-6 py-3 relative z-50">
+    <nav className="w-full bg-black text-white px-4 sm:px-6 py-5 relative z-50">
 
-      {/* TOP BAR */}
+      
       <div className="flex items-center justify-between">
 
-        {/* LEFT */}
+        
         <div className="flex items-center gap-4">
           <img
             src={assets.music_logo}
-            alt="logo"
-            className="h-9 invert"
+            alt="logo1 "
+            className="h-4 invert"
           />
+           </div>
+          
+          
 
-          {/* Home (desktop only) */}
-          <div className="hidden sm:flex bg-[#1f1f1f] p-2 rounded-full hover:bg-[#383737] cursor-pointer">
-            <img className="w-8 h-8" src={assets.home_icon} alt="" />
-          </div>
-        </div>
-
-        {/* DESKTOP MENU */}
+        
         <div className="hidden sm:flex items-center gap-6 text-sm">
-          <span className="text-gray-400 hover:text-white cursor-pointer">Premium</span>
-          <span className="text-gray-400 hover:text-white cursor-pointer">Support</span>
-          <span className="text-gray-400 hover:text-white cursor-pointer">Download</span>
+          <Link
+  to="/"
+  className="text-gray-400 hover:text-white cursor-pointer transition"
+>
+  Home
+</Link>
+          <Link
+  to="/premium"
+  className="text-gray-400 hover:text-white cursor-pointer transition"
+>
+  Premium
+</Link>
+
+<Link
+  to="/support"
+  className="text-gray-400 hover:text-white cursor-pointer transition"
+>
+  Support
+</Link>
+          <Link
+  to="/download"
+  className="text-gray-400 hover:text-white cursor-pointer transition"
+>
+  Download
+</Link>
 
           <div className="h-6 w-px bg-gray-700"></div>
 
@@ -48,7 +67,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* MOBILE HAMBURGER */}
+        
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="sm:hidden w-10 h-10 flex items-center justify-center rounded-full bg-[#1f1f1f] hover:bg-[#383737]"
@@ -59,7 +78,7 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* MOBILE MENU */}
+      
       {menuOpen && (
         <div className="sm:hidden absolute top-full left-0 w-full bg-gradient-to-b from-[#2a0f45] to-black border-t border-white/10 px-6 py-6 space-y-4">
 
@@ -71,9 +90,27 @@ const Navbar = () => {
             Home
           </Link>
 
-          <span className="block text-gray-300 hover:text-white">Premium</span>
-          <span className="block text-gray-300 hover:text-white">Support</span>
-          <span className="block text-gray-300 hover:text-white">Download</span>
+          <Link
+            to="/premium"
+            onClick={() => setMenuOpen(false)}
+            className="block text-lg font-medium hover:text-purple-300"
+          >
+            Premium
+          </Link>
+          <Link
+            to="/support"
+            onClick={() => setMenuOpen(false)}
+            className="block text-lg font-medium hover:text-purple-300"
+          >
+            Support
+          </Link>
+          <Link
+            to="/download"
+            onClick={() => setMenuOpen(false)}
+            className="block text-lg font-medium hover:text-purple-300"
+          >
+            Download
+          </Link>
 
           <div className="h-px bg-white/10 my-4"></div>
 

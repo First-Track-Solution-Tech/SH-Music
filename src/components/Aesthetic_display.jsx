@@ -1,5 +1,5 @@
 import React from "react";
-import Element_nav from "./Element_nav";
+
 import { useParams } from "react-router-dom";
 import { aestheticData, assets } from "../assets/assets";
 
@@ -13,7 +13,7 @@ if (!aesthetic) {
 
   return (
     <>
-      <Element_nav />
+      
 
       <div
         className="p-6"

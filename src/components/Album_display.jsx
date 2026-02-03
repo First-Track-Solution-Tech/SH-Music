@@ -1,5 +1,5 @@
 import React from 'react'
-import Element_nav from './Element_nav'
+
 import { useParams } from 'react-router-dom'
 import { albumsData, assets, songsData } from '../assets/assets';
 
@@ -10,7 +10,7 @@ const Album_display = () => {
    
   return (
     <>
-    <Element_nav/>
+    
     <div className="p-6" style={{background: `linear-gradient(180deg, ${albumData.bgColor} 0%, #121212 40%)`}} >
     <div className='mt-10 flex gap-8 flex-col md:flex-row md:items-end'>
         <img className='w-48 rounded' src={albumData.image} alt=''/>

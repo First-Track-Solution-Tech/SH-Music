@@ -1,44 +1,31 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Navbar from '../components/Navbar'
-// import Sidebar_temp from '../components/Sidebar_temp'
-import Music_display from '../components/Music_display'
 import { Outlet } from 'react-router-dom'
-// import Music_player from '../components/Music_player'
-import Footer from "../components/Footer";
-
-const Applayout = () => {
+import Footer from '../components/Footer'
+import Music_player from '../components/Music_player'
+const AppLayout = () => {
+   const [currentSongId, setCurrentSongId] = useState(null)
   return (
     <div className="min-h-screen bg-black text-white flex flex-col">
 
       
-      <div className="h-14 sm:h-16 shrink-0">
-        <Navbar />
-      </div>
+      <Navbar />
 
       
-      <div className="flex-1 flex gap-2 px-2">
+      <main className="flex-1 px-2">
+        <Outlet context={{ setCurrentSongId }} />
+      </main>
 
-        
-        {/* <div className="hidden sm:block sm:w-[280px] min-w-0 overflow-hidden rounded-xl bg-[#3130304f] group">
-          <Sidebar_temp />
-        </div> */}
+      {/* show player only if a song is selected */}
+      {currentSongId !== null && (
+        <Music_player songId={currentSongId} />
+      )}
 
-        
-        <div className="flex-1 min-w-0 rounded-xl bg-[#292828bf] relative">
-          <Music_display >
-            <Outlet />
-  </Music_display>
-
-          {/* <div className="absolute bottom-0 left-0 right-0">
-            <Music_player />
-          </div> */}
-          <Footer />
-        </div>
-
-      </div>
+      
+      <Footer />
 
     </div>
   )
 }
 
-export default Applayout
+export default AppLayout
