@@ -9,7 +9,7 @@ import Cta from './Cta'
 import Artists from './Artists'
 const Display_home = () => {
   return (
-    <div className="w-full rounded bg-[#121212] text-white p-6">
+    <div className="w-full rounded bg-gradient-to-b from-[#0f0c29] via-[#1a1a3a] to-[#0f2027] text-white p-6">
       
       <h1 className='my-5 font-bold text-2xl'>Album Trends</h1>
       <div className='flex overflow-x-auto no-scrollbar'>
@@ -27,12 +27,15 @@ const Display_home = () => {
       <Artists/>
 
 
-      <h1 className='my-5 font-bold text-2xl'>Aesthetic Trends</h1>
-      <div className='flex overflow-x-auto no-scrollbar'>
-        {aestheticData.map((item) => (
-          <Aesthetic_cards key={item.id} {...item} />
-        ))}
-      </div>
+      <h1 className="my-5 font-bold text-2xl">Aesthetic Trends</h1>
+
+<div className="flex gap-6 overflow-x-auto no-scrollbar pb-4">
+  {aestheticData.map(item => (
+    <Aesthetic_cards key={item.id} {...item} />
+  ))}
+</div>
+
+
       <Cta/>
       
 
