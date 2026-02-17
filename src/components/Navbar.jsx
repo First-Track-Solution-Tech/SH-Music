@@ -74,7 +74,7 @@ const Navbar = ({ onSearchClick }) => {
           </Link>
         </div>
 
-        {/* MOBILE BUTTON */}
+        
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="sm:hidden w-10 h-10 flex items-center justify-center rounded-full bg-[#1f1f1f] hover:bg-[#383737]"
