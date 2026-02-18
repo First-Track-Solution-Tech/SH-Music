@@ -6,7 +6,7 @@ const Navbar = ({ onSearchClick }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-gradient-to-r from-[#1a0025] via-[#3a0ca3] to-[#7209b7] text-white px-4 sm:px-6 h-20 flex items-center relative z-50">
+    <nav className="fixed top-0 left-0 w-full bg-gradient-to-r from-[#13011c] via-[#3a0ca3] to-[#7209b7] text-white px-4 sm:px-6 h-20 flex items-center z-50">
 
       
       <div className="flex items-center justify-between w-full">

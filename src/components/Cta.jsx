@@ -23,7 +23,7 @@ const Cta = () => {
           <button className="px-8 py-3 rounded-full bg-amber-50 text-black font-semibold hover:scale-105 transition">
             Start Listening
           </button>
-<Link to='aesthetic'className="px-8 py-3 rounded-full border border-gray-600 text-white hover:border-white hover:scale-105 transition">Explore Aesthetic Playlists</Link>
+<Link to='/create-playlist'className="px-8 py-3 rounded-full border border-gray-600 text-white hover:border-white hover:scale-105 transition">Create Playlists</Link>
           
         </div>
       </div>
