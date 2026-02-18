@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { assets } from "../assets/assets";
+import { Link } from "react-router-dom";
 
 const Explore_artist =() =>{
   const [openFAQ, setOpenFAQ] = useState(null);
@@ -183,9 +184,9 @@ const Explore_artist =() =>{
         <h2 className="text-3xl font-bold">
           Ready to explore new sounds and create ?
         </h2>
-        <button className="mt-6 px-10 py-3 rounded-full bg-purple-600 text-white hover:scale-105 transition">
+        <Link to="/createartist"> <button className="mt-6 px-10 py-3 rounded-full bg-purple-600 text-white hover:scale-105 transition">
           Explore Yourself
-        </button>
+        </button></Link>
       </section>
 
     </div>

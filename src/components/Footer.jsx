@@ -68,7 +68,9 @@ const Footer = () => {
         <div>
           <h4 className="text-white font-semibold mb-4">Useful Links</h4>
           <ul className="space-y-2 text-sm">
-            <li className="hover:text-white cursor-pointer">Support</li>
+            <li> <Link to="support" className="hover:text-white transition">
+        Support
+      </Link></li>
             <li className="hover:text-white cursor-pointer">Web Player</li>
             <li className="hover:text-white cursor-pointer">Mobile App</li>
           </ul>

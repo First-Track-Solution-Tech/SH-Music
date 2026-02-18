@@ -15,7 +15,9 @@ import Artists from './pages/Artists'
 import Advertising from './pages/Advertising'
 import Vendors from './pages/Vendors'
 import Explore_artist from './pages/Explore_artist'
-
+import CreateArtist from './pages/CreateArtist'
+import Collaborate from './pages/Collaborate'
+import CreatePlaylist from './pages/CreatePlaylist'
 
 export default function App() {
   return (
@@ -36,6 +38,10 @@ export default function App() {
       <Route path="/vendor" element={<Vendors />} />
       <Route path="/artist" element={<Artists />} />
       <Route path="/exploreartist" element={<Explore_artist />} />
+      <Route path="/createartist" element={<CreateArtist/>} />
+      <Route path="/create-playlist" element={<CreatePlaylist />} />
+
+      <Route path="/collaborate" element={<Collaborate />} />
 </Route>
       
     </Routes>
