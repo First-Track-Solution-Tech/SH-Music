@@ -1,38 +1,38 @@
-import React, {useState} from 'react'
-import Navbar from '../components/Navbar'
-import { Outlet } from 'react-router-dom'
-import Footer from '../components/Footer'
+import React, { useState } from "react";
+import Navbar from "../components/Navbar";
+import MobileBottomNav from "../components/MobileBottomNav";
+import { Outlet } from "react-router-dom";
+import Footer from "../components/Footer";
+import Music_player from "../components/Music_player";
 import SearchOverlay from "../components/SearchOverlay";
-import Music_player from '../components/Music_player'
-const AppLayout = () => {
-   const [searchOpen, setSearchOpen] = useState(false);
-const [currentSongId, setCurrentSongId] = useState(null)
-  return (
-    <div className="min-h-screen bg-black text-white flex flex-col">
 
-      
+const AppLayout = () => {
+  const [currentSongId, setCurrentSongId] = useState(null);
+  const [searchOpen, setSearchOpen] = useState(false);
+
+  return (
+    <div className="bg-black text-white">
+
       <Navbar onSearchClick={() => setSearchOpen(true)} />
 
-
-      
-      <main className="flex-1 px-2">
+      <main className=" px-2 pt-18 pb-1">
         <Outlet context={{ setCurrentSongId }} />
       </main>
 
-      {/* show player only if a song is selected */}
       {currentSongId !== null && (
         <Music_player songId={currentSongId} />
       )}
-
-      <SearchOverlay
+<SearchOverlay
   isOpen={searchOpen}
   onClose={() => setSearchOpen(false)}
 />
 
       <Footer />
 
-    </div>
-  )
-}
+      <MobileBottomNav />
 
-export default AppLayout
+    </div>
+  );
+};
+
+export default AppLayout;
