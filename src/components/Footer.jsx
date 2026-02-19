@@ -4,7 +4,8 @@ import { Link } from "react-router-dom"
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-b from-[#1a082e] to-black text-gray-400 pt-12 mt-16">
+    <footer className="bg-gradient-to-b from-[#0f011b] to-[#37098c]
+ text-gray-400 pt-12 mt-16">
 
       
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
@@ -14,8 +15,9 @@ const Footer = () => {
           <img
             src={assets.music_logo}
             alt="logo"
-            className="h-10 mb-4 invert"
+            className="h-20 mb-1"
           />
+          <p className="text-xl mb-3 text-amber-100">SH Music</p>
           <p className="text-sm leading-relaxed">
             Discover, stream, and share a constantly expanding mix of music from
             emerging and major artists around the world.
