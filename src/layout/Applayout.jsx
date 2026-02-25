@@ -15,7 +15,7 @@ const AppLayout = () => {
 
       <Navbar onSearchClick={() => setSearchOpen(true)} />
 
-      <main className=" px-2 pt-18 pb-1">
+      <main className=" px-5 pt-18 pb-1">
         <Outlet context={{ setCurrentSongId }} />
       </main>
 

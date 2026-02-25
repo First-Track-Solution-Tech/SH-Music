@@ -18,6 +18,8 @@ import Explore_artist from './pages/Explore_artist'
 import CreateArtist from './pages/CreateArtist'
 import Collaborate from './pages/Collaborate'
 import CreatePlaylist from './pages/CreatePlaylist'
+import FAQ from './pages/FAQ'
+import Refund from './pages/Refund'
 
 export default function App() {
   return (
@@ -40,6 +42,8 @@ export default function App() {
       <Route path="/exploreartist" element={<Explore_artist />} />
       <Route path="/createartist" element={<CreateArtist/>} />
       <Route path="/create-playlist" element={<CreatePlaylist />} />
+<Route path="/faq" element={<FAQ />} />
+<Route path="/refund" element={<Refund />} />
 
       <Route path="/collaborate" element={<Collaborate />} />
 </Route>
