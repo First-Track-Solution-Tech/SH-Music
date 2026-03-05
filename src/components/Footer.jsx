@@ -8,7 +8,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="bg-gradient-to-r from-[#1a002e] via-[#240046] to-[#3c096c] text-gray-400 pt-12 mt-18">
+      <footer className="bg-gradient-to-r from-[#1a002e] via-[#240046] to-[#3c096c] text-gray-400 pt-12 mt-18 mb-10 sm:mb-0">
 
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
 

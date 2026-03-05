@@ -191,7 +191,7 @@ export const albumsData = [
     followers: "980K",
   },
   {
-    id: 5,
+    id: 6,
     name: "Nova Bradford",
     genre: "Alt Pop",
     image: artist6,
