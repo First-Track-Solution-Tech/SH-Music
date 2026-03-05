@@ -8,24 +8,26 @@ const About_us = () => {
 
         
         <h1 className="text-3xl md:text-4xl font-bold mb-10">
-          About SH.Music
+          About SH Music
         </h1>
 
         
         <section className="mb-12">
-          <p className="text-gray-300 leading-relaxed mb-4">
-            SH.Music is a modern music streaming platform built for listeners
-            who value simplicity, performance, and immersive sound discovery.
-            Our goal is to bring music closer to people through a clean and
-            engaging digital experience.
-          </p>
+  <p className="text-gray-300 leading-relaxed mb-4">
+    <span className="font-semibold">SH Music</span> is a flagship digital initiative by <span className="font-bold"> First Track Solution Technologies Pvt Ltd</span>, created with a
+    vision to deliver seamless and immersive music experiences. Built with a
+    strong focus on innovation and user satisfaction, the platform blends
+    modern design with high-performance streaming technology.
+  </p>
 
-          <p className="text-gray-300 leading-relaxed">
-            Designed with inspiration from leading streaming platforms,
-            SH.Music focuses on intuitive navigation, fast interactions,
-            and beautifully organized music collections.
-          </p>
-        </section>
+  <p className="text-gray-300 leading-relaxed">
+    Backed by the creative and technical foundation of <span className="font-bold">  First Track Solution Technologies Pvt Ltd</span>,  
+    <span className="font-semibold"> SH Music</span> is thoughtfully crafted to simplify music discovery,
+    enhance listening journeys, and provide a smooth, distraction-free
+    interface. Our mission is to connect listeners with sound in a way
+    that feels effortless, engaging, and truly personal.
+  </p>
+</section>
 
        
         <section className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-14">

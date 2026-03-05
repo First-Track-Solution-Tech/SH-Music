@@ -10,7 +10,7 @@ import {
 
 const MobileBottomNav = () => {
   return (
-    <div className="fixed bottom-0 left-0 w-full bg-black/80 backdrop-blur-md border-t border-white/10 flex justify-around items-center py-1 sm:hidden z-50">
+    <div className="fixed bottom-0 left-0 w-full h-10 bg-black/80 backdrop-blur-md border-t border-white/10 flex justify-around items-center sm:hidden z-50">
 
       <NavLink
         to="/"
@@ -21,7 +21,7 @@ const MobileBottomNav = () => {
         }
       >
         <Home size={20} />
-        Home
+        
       </NavLink>
 
       <NavLink

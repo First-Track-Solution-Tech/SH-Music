@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import MobileBottomNav from "../components/MobileBottomNav";
 import { Outlet } from "react-router-dom";
 import Footer from "../components/Footer";
-import Music_player from "../components/Music_player";
+import Music_player from "../components/MusicPlayer";
 import SearchOverlay from "../components/SearchOverlay";
 
 const AppLayout = () => {
@@ -11,16 +11,16 @@ const AppLayout = () => {
   const [searchOpen, setSearchOpen] = useState(false);
 
   return (
-    <div className="bg-black text-white">
+    <div className="bg-black text-white min-h-screen flex flex-col">
 
       <Navbar onSearchClick={() => setSearchOpen(true)} />
 
-      <main className=" px-2 pt-18 pb-1">
+      <main className="px-5 pt-16 flex-1">
         <Outlet context={{ setCurrentSongId }} />
       </main>
 
       {currentSongId !== null && (
-        <Music_player songId={currentSongId} />
+        <MusicPlayer songId={currentSongId} />
       )}
 <SearchOverlay
   isOpen={searchOpen}

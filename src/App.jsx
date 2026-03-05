@@ -18,7 +18,10 @@ import Explore_artist from './pages/Explore_artist'
 import CreateArtist from './pages/CreateArtist'
 import Collaborate from './pages/Collaborate'
 import CreatePlaylist from './pages/CreatePlaylist'
-
+import FAQ from './pages/FAQ'
+import Refund from './pages/Refund'
+import Player from "./pages/Player";
+import MyLibrary from './pages/MyLibrary'
 export default function App() {
   return (
     <Routes>
@@ -26,7 +29,7 @@ export default function App() {
       <Route index element={<Display_home />} />
         <Route path="album/:id" element={<Album_display />} />
         <Route path="aesthetic/:id" element={<Aesthetic_display />} />
-       
+         <Route path="/player/:id" element={<Player />} />
       <Route path="/register" element={<Register />} />
       <Route path="about" element={<About_us />} />
       <Route path='/premium' element={<Premium/>} />
@@ -40,7 +43,9 @@ export default function App() {
       <Route path="/exploreartist" element={<Explore_artist />} />
       <Route path="/createartist" element={<CreateArtist/>} />
       <Route path="/create-playlist" element={<CreatePlaylist />} />
-
+<Route path="/faq" element={<FAQ />} />
+<Route path="/refund" element={<Refund />} />
+<Route path='library' element={<MyLibrary/>}/>
       <Route path="/collaborate" element={<Collaborate />} />
 </Route>
       

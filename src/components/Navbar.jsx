@@ -20,7 +20,12 @@ const Navbar = ({ onSearchClick }) => {
         <Link to="/premium" className="hover:text-white">Premium</Link>
         <Link to="/support" className="hover:text-white">Support</Link>
         <Link to="/download" className="hover:text-white">Download</Link>
-
+<Link
+  to="/library"
+  className="hover:text-white"
+>
+  My Library
+</Link>
         <button
   onClick={onSearchClick}
   className="text-gray-300 hover:text-white transition"
