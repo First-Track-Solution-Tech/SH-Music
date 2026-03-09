@@ -7,14 +7,17 @@ const Navbar = ({ onSearchClick }) => {
   return (
     <nav className="fixed top-0 left-0 w-full h-16 z-50 bg-gradient-to-r from-[#1a0025] via-[#3a0ca3] to-[#7209b7] text-white px-6 flex items-center justify-between">
 
-      <Link to="/" className="flex items-center">
-        <img
-          src={assets.music_logo}
-          alt="logo"
-          className="h-18 object-contain"
-        />
-      </Link>
+      <Link to="/" className="flex items-center gap-2">
+  <img
+    src={assets.music_logo}
+    alt="logo"
+    className="h-12 object-contain"
+  />
 
+  <span className="text-xl font-bold tracking-wide text-white">
+    SH <span className="text-purple-400">Music</span>
+  </span>
+</Link>
       <div className="hidden sm:flex items-center gap-6 text-sm">
         <Link to="/" className="hover:text-white">Home</Link>
         <Link to="/premium" className="hover:text-white">Premium</Link>

@@ -33,8 +33,12 @@ const Footer = () => {
                   About
                 </Link>
               </li>
-              <li className="hover:text-white cursor-pointer">Jobs</li>
-              <li className="hover:text-white cursor-pointer">For the Record</li>
+              <li>
+                <Link to="/contact" className="hover:text-white transition">
+                  Contact Us
+                </Link>
+              </li>
+              <li><Link to="/record" className="hover:text-white cursor-pointer">For the Record</Link></li>
             </ul>
           </div>
 
@@ -89,6 +93,11 @@ const Footer = () => {
                 >
                   Terms & Conditions
                 </button>
+              </li>
+              <li>
+                <Link to="/privacy-policy" className="hover:text-white transition">
+                  Privacy & Policy
+                </Link>
               </li>
             </ul>
           </div>

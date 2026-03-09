@@ -21,7 +21,10 @@ import CreatePlaylist from './pages/CreatePlaylist'
 import FAQ from './pages/FAQ'
 import Refund from './pages/Refund'
 import Player from "./pages/Player";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import MyLibrary from './pages/MyLibrary'
+import Contact from './pages/Contact'
+import ForTheRecord from './pages/ForTheRecord'
 export default function App() {
   return (
     <Routes>
@@ -32,6 +35,8 @@ export default function App() {
          <Route path="/player/:id" element={<Player />} />
       <Route path="/register" element={<Register />} />
       <Route path="about" element={<About_us />} />
+      <Route path="contact" element={<Contact />} />
+      <Route path="record" element={<ForTheRecord />} />
       <Route path='/premium' element={<Premium/>} />
       <Route path='/download' element={<Download/>} />
       <Route path="support" element={<Support />} />
@@ -44,6 +49,7 @@ export default function App() {
       <Route path="/createartist" element={<CreateArtist/>} />
       <Route path="/create-playlist" element={<CreatePlaylist />} />
 <Route path="/faq" element={<FAQ />} />
+<Route path="/privacy-policy" element={<PrivacyPolicy />} />
 <Route path="/refund" element={<Refund />} />
 <Route path='library' element={<MyLibrary/>}/>
       <Route path="/collaborate" element={<Collaborate />} />

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Eye, EyeOff } from "lucide-react";
 
 const countryCodes = [
-  { code: "+91", country: "India" },
+  { code: "+91", country: "Ind" },
   { code: "+1", country: "USA / Canada" },
   { code: "+44", country: "UK" },
   { code: "+61", country: "Australia" },
@@ -43,28 +43,26 @@ const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
           
           <div className="flex bg-[#242424] rounded-lg overflow-hidden focus-within:ring-2 focus-within:ring-purple-500 transition">
+  
+  <select
+    value={selectedCode}
+    onChange={(e) => setSelectedCode(e.target.value)}
+    className="bg-[#242424] text-white outline-none border-r border-gray-700 px-2 py-3 text-sm w-20 shrink-0"
+  >
+    {countryCodes.map((item, index) => (
+      <option key={index} value={item.code}>
+        {item.code}
+      </option>
+    ))}
+  </select>
 
-            
-            <select
-              value={selectedCode}
-              onChange={(e) => setSelectedCode(e.target.value)}
-              className="bg-[#242424] text-white px-3 outline-none border-r border-gray-700"
-            >
-              {countryCodes.map((item, index) => (
-                <option key={index} value={item.code}>
-                  {item.code} ({item.country})
-                </option>
-              ))}
-            </select>
-
-            
-            <input
-              type="tel"
-              placeholder="Phone Number"
-              pattern="[0-9]{10}"
-              className="w-full bg-[#242424] text-white placeholder-gray-500 px-4 py-3 outline-none"
-            />
-          </div>
+  <input
+    type="tel"
+    placeholder="Phone Number"
+    pattern="[0-9]{10}"
+    className="flex-1 min-w-0 bg-[#242424] text-white placeholder-gray-500 px-4 py-3 outline-none"
+  />
+</div>
 
           <input
             type="email"
@@ -77,7 +75,7 @@ const [showConfirmPassword, setShowConfirmPassword] = useState(false);
           <div className="relative">
   <input
     type={showPassword ? "text" : "password"}
-    placeholder="Password"
+    placeholder="Create Password"
     className="w-full bg-[#242424] text-white placeholder-gray-500 px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 transition pr-12"
   />
   <button
