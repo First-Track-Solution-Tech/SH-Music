@@ -18,7 +18,9 @@ const Footer = () => {
               alt="logo"
               className="h-22 mb-1"
             />
-            <p className="text-xl mb-3 text-amber-100">SH Music</p>
+           <span className="text-xl font-bold tracking-wide text-white">
+    SH <span className="text-purple-400">Music</span>
+  </span>
             <p className="text-sm leading-relaxed">
               Discover, stream, and share a constantly expanding mix of music from
               emerging and major artists around the world.
@@ -33,8 +35,12 @@ const Footer = () => {
                   About
                 </Link>
               </li>
-              <li className="hover:text-white cursor-pointer">Jobs</li>
-              <li className="hover:text-white cursor-pointer">For the Record</li>
+              <li>
+                <Link to="/contact" className="hover:text-white transition">
+                  Contact Us
+                </Link>
+              </li>
+              <li><Link to="/record" className="hover:text-white cursor-pointer">For the Record</Link></li>
             </ul>
           </div>
 
@@ -89,6 +95,11 @@ const Footer = () => {
                 >
                   Terms & Conditions
                 </button>
+              </li>
+              <li>
+                <Link to="/privacy-policy" className="hover:text-white transition">
+                  Privacy & Policy
+                </Link>
               </li>
             </ul>
           </div>
