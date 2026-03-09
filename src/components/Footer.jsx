@@ -18,7 +18,9 @@ const Footer = () => {
               alt="logo"
               className="h-22 mb-1"
             />
-            <p className="text-xl mb-3 text-amber-100">SH Music</p>
+           <span className="text-xl font-bold tracking-wide text-white">
+    SH <span className="text-purple-400">Music</span>
+  </span>
             <p className="text-sm leading-relaxed">
               Discover, stream, and share a constantly expanding mix of music from
               emerging and major artists around the world.
